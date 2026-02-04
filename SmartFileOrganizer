@@ -1,6 +1,8 @@
 import os
 import shutil
 
+    if not os.path.exists(directory_path):
+        print("Directory does not exist.")
 def organize_files(directory_path):
     """
     Organizes files in the given directory by their file extensions.
