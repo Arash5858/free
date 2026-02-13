@@ -23,7 +23,9 @@ Organizes files in the given directory by their file extensions.
         return
         if os.path.isfile(file_path):
             file_extension = filename.split('.')[-1].lower()
-
+ if not os.path.exists(directory_path):
+        print("Directory does not exist.")
+def organize_files(directory_path):
             target_folder = os.path.join(directory_path, file_extension)
             os.makedirs(target_folder, exist_ok=True)
 
