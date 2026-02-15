@@ -21,6 +21,9 @@ Organizes files in the given directory by their file extensions.
     if not os.path.exists(directory_path):
         print("Directory does not exist.")
         return
+    if not os.path.exists(directory_path):
+        print("Directory does not exist.")
+        return
         if os.path.isfile(file_path):
             file_extension = filename.split('.')[-1].lower()
  if not os.path.exists(directory_path):
